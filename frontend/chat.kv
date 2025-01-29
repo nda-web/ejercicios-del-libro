@@ -1,0 +1,14 @@
+<ChatScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        MDToolbar:
+            title: "Chat IA"
+        ScrollView:
+            MDList:
+                id: chat_list
+        MDTextField:
+            id: input_text
+            hint_text: "Escribe tu mensaje..."
+        MDRaisedButton:
+            text: "Enviar"
+            on_press: app.send_message()
